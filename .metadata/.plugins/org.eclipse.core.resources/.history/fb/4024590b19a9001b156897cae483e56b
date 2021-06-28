@@ -1,0 +1,9 @@
+package entitis;
+
+public class CurrencyConverter {
+	
+	public static double price;
+	public static double quantity;
+	
+
+}

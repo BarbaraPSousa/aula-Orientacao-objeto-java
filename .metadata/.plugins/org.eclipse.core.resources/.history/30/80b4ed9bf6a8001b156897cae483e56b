@@ -1,0 +1,9 @@
+package entitis;
+
+public class Funcionario {
+	
+	public String name;
+	public double grossSalary;
+	public double tax;
+
+}

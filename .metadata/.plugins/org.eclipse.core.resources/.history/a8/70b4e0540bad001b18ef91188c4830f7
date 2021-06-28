@@ -1,0 +1,22 @@
+package course;
+
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		
+		
+		/*Trabalhando com Data*/
+		
+		/*decl obj*/     /*variavel*/					  /*inf String format*/
+		SimpleDateFormat   sdf1 =    new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat   sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");//variavel com dia mes e ano e minutoe e segundo
+						
+		Date y1 = (Date) sdf1.parse("25/06/2020"); // parse recebe um dado no formato String e converte respeitando o formato declarado.
+		Date y2 = (Date) sdf2.parse("25/06/2020 16:02:00");
+	}
+
+}

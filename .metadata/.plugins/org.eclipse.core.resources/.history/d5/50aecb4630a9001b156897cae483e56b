@@ -1,0 +1,32 @@
+package entities;
+
+public class DadosConta {
+	
+	private double numeroConta;
+	private String nomeTitular;
+	private double depositoInicia;
+	
+	public DadosConta(double numeroConta, String nomeTitular) {
+		super();
+		this.numeroConta = numeroConta;
+		this.nomeTitular = nomeTitular;
+		
+	}
+
+	public String getNomeTitular() {
+		return nomeTitular;
+	}
+
+	public void setNomeTitular(String nomeTitular) {
+		this.nomeTitular = nomeTitular;
+	}
+
+	public double getDepositoInicia() {
+		return depositoInicia;
+	}
+
+	public void setDepositoInicia(double depositoInicia) {
+		this.depositoInicia = depositoInicia;
+	}
+	
+}

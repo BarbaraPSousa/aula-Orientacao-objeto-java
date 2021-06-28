@@ -1,0 +1,23 @@
+package course;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Date;
+
+public class ProgramMD {
+
+	public static void main(String[] args) {
+		
+		/*Manipulando data com Calendar*/
+		
+		/*Soamdno ou subitraindo unidade de tempo da data*/
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date d = Date.from(Instant.parse("2020-06-04T17:36:03Z"));
+				
+		System.out.println(sdf.format(d));
+
+	}
+
+}

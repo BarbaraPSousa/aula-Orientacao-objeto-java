@@ -1,0 +1,50 @@
+package course;
+
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		
+		
+		/*Trabalhando com Data*/
+		
+		/*decl obj*/     /*variavel*/					  /*inf String format*/
+		SimpleDateFormat   sdf1 =    new SimpleDateFormat("dd/MM/yyyy");//Os "MM" sepre em caixa alta
+		SimpleDateFormat   sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");//variavel com dia mes e ano e minutoe e segundo
+						
+		java.util.Date y1 =  sdf1.parse("04/05/2021"); // parse recebe um dado no formato String e converte respeitando o formato declarado.
+		java.util.Date y2 = sdf2.parse("04/05/2021 16:02:00");
+		
+		/*Estanciando data com hora atual*/
+		
+        /*Class*/   /*Variavel */		 /*pega o instante do sistema e converte para mili segundo*/
+		Date          x1 =      new Date(System.currentTimeMillis());
+		Date 		  x2 = 		new Date(0);
+		/*Imprimo com data atual*/
+		
+		System.out.println("x1: " + sdf2.format(x1)); 
+		System.out.println("x2: " + sdf2.format(x2));
+		
+		System.out.println("**************");
+		/*Imprimo no formato padrao do Java*/
+		System.out.println(y1);
+		System.out.println(y2);
+		System.out.println("**************");
+		
+		/*Imprimo no formato padrão ISO do Java*/
+							/*Variavel tem uma operação de formatação*/
+		System.out.println("y1: " + sdf2.format(y1));
+		System.out.println("y2: " + sdf2.format(y2));
+		
+		
+
+		
+		
+		
+		
+	}
+
+}

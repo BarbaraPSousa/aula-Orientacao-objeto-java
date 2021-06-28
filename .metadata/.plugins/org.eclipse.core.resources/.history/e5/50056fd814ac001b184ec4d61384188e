@@ -1,0 +1,70 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		/*Lista*/	/*nome*/    /*Clase que comp intef*/
+		List<String > list = new ArrayList<>();
+		
+		/*Adicionando coisas na Lista*/
+		  list.add("Maria");
+		  list.add("Alex");
+		  list.add("Bob");
+		  list.add("Anna");
+		  
+		  /*Inserino novo elemento na lista*/
+		  /*fun*/ /*posicao*/ /*o que quer coloca na lista*/ 
+		  list.add(    2,      "Marco");
+		  
+		  /*Tamanho Lista*/
+		  					/*func.*/
+		 System.out.println(list.size());
+		 		
+
+		  
+		  /*Percorrendo a lista com For EACH*/
+		  /*TIPO list*/ /*nome*/ /*lista*/
+		  for(String     x :      list) {
+			  System.out.println(x);
+		  }
+		  
+			System.out.println("***********************************");
+
+		  /*Removendo*/
+		  /*fun.*/   /*argumento a ser removido*/
+		 // list.remove(1); // pode se usar o nome ou a posição
+		  
+		  /*Removendo com Predicado*/
+		  /*fun*/		/*nome */		/*Oque deseja remover*/		
+		  list.removeIf(x -> x.charAt(0) == 'M');
+		
+		  for(String     x :      list) {
+			  System.out.println(x);
+		  }
+		  
+		  System.out.println("***********************************");
+		  
+		  /*Entratar a Posição de um Elemento*/
+		  									   /*Fun.*/	   /*Nome*/
+		  System.out.println("Index of Bob" + list.indexOf("Bob"));
+		  
+		  
+		  
+		  
+		  
+		sc.close();
+
+	}
+
+}

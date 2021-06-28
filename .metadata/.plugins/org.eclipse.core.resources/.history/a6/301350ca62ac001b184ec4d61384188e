@@ -1,0 +1,42 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		String nome1, nome2;
+		double valorHora1, valorHora2, total;
+		int hora1, hora2;
+		
+		System.out.println("Dado primeiro funcionario: ");
+		nome1 = sc.next();
+		valorHora1 = sc.nextDouble();
+		hora1 = sc.nextInt();
+		
+		System.out.println();
+		System.out.println("Dado segundo funcionario: ");
+		nome2 = sc.next();
+		valorHora2 = sc.nextDouble();
+		hora2 = sc.nextInt();
+		
+		total = valorHora1 * hora1  + valorHora2 * hora2;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}
