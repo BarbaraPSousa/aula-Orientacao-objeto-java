@@ -1,6 +1,6 @@
 package entities;
 
-public class Individual extends TaxPayer{
+public class Individual extends TaxPayer{//extends
 
 	private Double healthExpenditures; //Despesa com saude
 	

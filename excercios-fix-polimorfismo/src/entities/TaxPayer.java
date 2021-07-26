@@ -8,7 +8,7 @@ public abstract class TaxPayer {
 	public TaxPayer() {		
 	}
 
-	public TaxPayer(String name, Double anualIncome) {
+	public TaxPayer(String name, Double anualIncome) {//metodo
 		super();
 		this.name = name;
 		this.anualIncome = anualIncome;

@@ -24,7 +24,7 @@ public class Cumpany extends TaxPayer{
 	@Override
 	public double tax() {
 		if(numberOfEmployees > 10) {
-			return getAnualIncome() * 1.4;
+			return getAnualIncome() * 1.6;
 		}
 		else {
 			return getAnualIncome() * 1.6;
